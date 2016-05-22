@@ -2,7 +2,7 @@ var React = require('react');
 
 var WeatherMessage = (props) => {
 	var {temp, location} = props;
-	var tempC = (temp - 32) / 1.8;
+	var tempC = Math.round((temp - 32) / 1.8);
 
 	return (
 		<div>
